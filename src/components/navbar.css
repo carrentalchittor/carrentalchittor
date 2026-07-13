@@ -1,0 +1,74 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+ background: #f3f9d8fe;
+  border-bottom: 1px solid #ceed94;
+  
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #126b3a;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.links button,
+.pill {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #126b3a;
+}
+
+.menu {
+  display: none;
+  border: 0;
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+    background: #ffffff;
+  }
+
+  .links.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 4%;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+}

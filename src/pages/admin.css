@@ -1,0 +1,76 @@
+.adminGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 28px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px #14331c14;
+}
+
+.panel input,
+.panel textarea,
+.panel select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8e2da;
+  border-radius: 10px;
+}
+
+.panel button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  background: #126b3a;
+  font-weight: 700;
+}
+
+.miniGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.miniGrid img {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.tableWrap {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e4e9e5;
+}
+
+@media (max-width: 900px) {
+  .adminGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .miniGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

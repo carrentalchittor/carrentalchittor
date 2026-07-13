@@ -1,0 +1,36 @@
+.auth {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #edf8ef, #ffffff);
+}
+
+.auth form {
+  position: relative;
+  width: min(520px, 100%);
+  padding: 30px;
+  border-radius: 22px;
+  background: #ffffff;
+}
+
+.auth label {
+  display: grid;
+  gap: 7px;
+  margin: 14px 0;
+  font-weight: 700;
+}
+
+.auth input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8e2da;
+  border-radius: 10px;
+}
+
+.linkBtn {
+  margin-top: 16px;
+  border: 0;
+  color: #126b3a;
+  background: transparent;
+}
