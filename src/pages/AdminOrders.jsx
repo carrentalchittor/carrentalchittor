@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import API, { asset } from "../api";
 import "./admin.css";
 
 const bookingStatuses = [
