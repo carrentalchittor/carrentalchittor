@@ -3,9 +3,8 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import API from "../api";
 import "./admin.css";
-
+import API from "../api";
 export default function AdminVehicles() {
   const [vehicles, setVehicles] = useState([]);
   const [search, setSearch] = useState("");
@@ -485,15 +484,15 @@ export default function AdminVehicles() {
                 (vehicle) => (
                   <tr key={vehicle._id}>
                     <td>
-                      <img
-                        className="adminVehicleImage"
-                        src={
-                          vehicle.image?.startsWith("https://")
-                            ? vehicle.image
-                            : "/placeholder-vehicle.png"
-                        }
-                        alt={vehicle.name}
-                      />
+                     {vehicle.image?.startsWith("https://") ? (
+  <img
+    className="adminVehicleImage"
+    src={vehicle.image}
+    alt={vehicle.name}
+  />
+) : (
+  <span>No image</span>
+)}
                     </td>
 
                     <td>
