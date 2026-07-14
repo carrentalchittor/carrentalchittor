@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-
+import AdminOrders from "./pages/AdminOrders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -11,7 +11,7 @@ import Admin from "./pages/Admin";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 import Services from "./pages/Services";
-
+import AdminVehicles from "./pages/AdminVehicles";
 import { useAuth } from "./context/AuthContext";
 
 function Guard({ children, admin = false }) {
@@ -62,6 +62,32 @@ export default function App() {
               </Guard>
             }
           />
+          <Route
+  path="/admin"
+  element={
+    <Guard admin>
+      <Admin />
+    </Guard>
+  }
+/>
+
+<Route
+  path="/admin/vehicles"
+  element={
+    <Guard admin>
+      <AdminVehicles />
+    </Guard>
+  }
+/>
+
+<Route
+  path="/admin/orders"
+  element={
+    <Guard admin>
+      <AdminOrders />
+    </Guard>
+  }
+/>
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
