@@ -3,8 +3,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-
-import API, { asset } from "../api";
+import API from "../api";
 import "./admin.css";
 
 export default function AdminVehicles() {
@@ -32,7 +31,7 @@ export default function AdminVehicles() {
 
       alert(
         error.response?.data?.message ||
-          "Vehicles load nahi ho paye"
+        "Vehicles load nahi ho paye"
       );
     } finally {
       setLoading(false);
@@ -108,7 +107,7 @@ export default function AdminVehicles() {
 
       alert(
         error.response?.data?.message ||
-          "Vehicle add nahi ho paya"
+        "Vehicle add nahi ho paya"
       );
     } finally {
       setAddingVehicle(false);
@@ -140,7 +139,7 @@ export default function AdminVehicles() {
 
       alert(
         error.response?.data?.message ||
-          "Vehicle delete nahi ho paya"
+        "Vehicle delete nahi ho paya"
       );
     }
   };
@@ -170,7 +169,7 @@ export default function AdminVehicles() {
 
       alert(
         error.response?.data?.message ||
-          "Availability update nahi ho payi"
+        "Availability update nahi ho payi"
       );
     }
   };
@@ -205,7 +204,7 @@ export default function AdminVehicles() {
 
       alert(
         error.response?.data?.message ||
-          "QR upload nahi ho paya"
+        "QR upload nahi ho paya"
       );
     } finally {
       setUploadingQr(false);
@@ -488,9 +487,11 @@ export default function AdminVehicles() {
                     <td>
                       <img
                         className="adminVehicleImage"
-                        src={asset(
-                          vehicle.image
-                        )}
+                        src={
+                          vehicle.image?.startsWith("https://")
+                            ? vehicle.image
+                            : "/placeholder-vehicle.png"
+                        }
                         alt={vehicle.name}
                       />
                     </td>

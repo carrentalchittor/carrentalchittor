@@ -127,6 +127,7 @@ Please approve my booking.
                 alt={car.name}
               />
 
+
               <div className="carBody">
                 <h3>{car.name}</h3>
 
