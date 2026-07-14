@@ -33,3 +33,4 @@ export function asset(url) {
     cleanUrl.startsWith("/") ? "" : "/"
   }${cleanUrl}`;
 }
+export default API;
