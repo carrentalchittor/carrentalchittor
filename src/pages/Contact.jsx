@@ -17,18 +17,18 @@ export default function Contact() {
       <div className="contactCards">
         {/* Call */}
 
-        <a href="tel:6367697913">
+        <a href="tel:6378162396">
           <Phone size={28} />
 
           <h3>Call</h3>
 
-          <p>6367697913</p>
+          <p>6378162396</p>
         </a>
 
         {/* WhatsApp */}
 
         <a
-          href="https://wa.me/916367697913"
+          href="https://wa.me/6378162396"
           target="_blank"
           rel="noopener noreferrer"
         >
