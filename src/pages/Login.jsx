@@ -46,8 +46,7 @@ export default function Login() {
         formData
       );
 
-      login(response.data.user);
-
+login(response.data);
       navigate(
         response.data.user.role === "admin"
           ? "/admin"
