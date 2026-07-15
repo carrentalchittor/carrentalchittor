@@ -138,7 +138,7 @@ const location = useLocation();
             maxLength={10}
             inputMode="numeric"
             autoComplete="tel"
-            placeholder="9876543210"
+            placeholder="eg xxxxxxxxxx"
           />
         </label>
 
