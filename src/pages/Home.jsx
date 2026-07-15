@@ -85,14 +85,18 @@ Please approve my booking.
             Trusted Local Vehicle Rental
           </span>
 
-          <h1>
-            Explore Chittorgarh with the Right Vehicle
-          </h1>
+        <h1>
+  Car, Bike and Scooty Rental Service in Chittorgarh
+</h1>
 
-          <p>
-            Clean vehicles, transparent pricing and quick booking
-            through WhatsApp or phone.
-          </p>
+        <p>
+  Book affordable cars, bikes, scooties, SUVs and premium
+  vehicles on rent in Chittorgarh with clear daily pricing,
+  document verification and quick WhatsApp booking.
+</p>
+<h2>
+  Available Cars, Bikes and Scooties on Rent in Chittorgarh
+</h2>
           
 
           <div className="actions">

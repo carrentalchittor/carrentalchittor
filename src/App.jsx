@@ -54,14 +54,7 @@ export default function App() {
             }
           />
 
-          <Route
-            path="/admin"
-            element={
-              <Guard admin>
-                <Admin />
-              </Guard>
-            }
-          />
+         
           <Route
   path="/admin"
   element={
