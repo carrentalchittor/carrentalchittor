@@ -390,3 +390,47 @@
     font-size: 8px;
   }
 }
+
+
+
+.vehicleLoading,
+.noVehicles {
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  color: #475569;
+}
+
+.loadingSpinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid #dbeafe;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: vehicleSpin 0.75s linear infinite;
+}
+
+@keyframes vehicleSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.car img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 25 / 16;
+  object-fit: cover;
+  background-color: #e2e8f0;
+}
+
+.modalBox .primary:disabled,
+.modalBox .close:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
