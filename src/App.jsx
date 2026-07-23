@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import AdminOrders from "./pages/AdminOrders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -96,6 +97,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
